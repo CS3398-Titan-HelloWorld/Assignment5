@@ -7,7 +7,7 @@ public class Manager {
 	public void Manager() {
 
 	}
-	public void setWorker(Worker w) {
+	public void setWorker(BaseWorker w) {
 		worker=w;
 	}
 
