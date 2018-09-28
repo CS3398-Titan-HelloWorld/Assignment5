@@ -1,6 +1,5 @@
 package src;
 
-
 public class BaseWorker {
 
 	public void work() {
