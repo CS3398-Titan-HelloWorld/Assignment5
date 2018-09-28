@@ -1,3 +1,3 @@
 language: java
 jdk: oraclejdk8
-script: andt main
+script: ant doall
