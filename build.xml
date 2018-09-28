@@ -1,6 +1,6 @@
 <project>
 
-   <target name="ThreeSolidMain">
+   <target name="doall">
      <echo message="Running all targets in succession: clean, compile, jar, run."/>
      <antcall target="clean"/>
      <antcall target="compile"/>
