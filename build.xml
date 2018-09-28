@@ -1,5 +1,13 @@
 <project>
 
+   <target name="doall">
+     <echo message="Running all targets in succession: clean, compile, jar, run."/>
+     <antcall target="clean"/>
+     <antcall target="compile"/>
+     <antcall target="jar"/>
+     <antcall target="run"/>
+   </target>
+    
     <target name="clean">
         <delete dir="build"/>
     </target>
@@ -21,12 +29,5 @@
     <target name="run">
         <java jar="build/jar/ThreeSolidMain.jar" fork="true"/>
     </target>
-    <target name="doall">
-     <echo message="Running all targets in succession: clean, compile, jar, run."/>
-     <antcall target="clean"/>
-     <antcall target="compile"/>
-     <antcall target="jar"/>
-     <antcall target="run"/>
-   </target>
     
 </project>
